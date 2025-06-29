@@ -1,6 +1,7 @@
 "use client";
 
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState } from 'react';
+import { BookOpen, Zap } from 'lucide-react';
 import styles from './FullSinglePost.module.css';
 
 interface FullSinglePostProps {
@@ -16,6 +17,8 @@ const FullSinglePost: FunctionComponent<FullSinglePostProps> = ({
   readTime = "10 min read",
   description = "A curated collection of insights, tools, and best practices for fast forward thinking founders shipping their ideas with AI. Stay ahead of the curve with resources that matter."
 }) => {
+  const [isSkimMode, setIsSkimMode] = useState(true);
+
   return (
     <div className={styles.fullSinglePost}>
       <div className={styles.frameParent}>
@@ -43,11 +46,16 @@ const FullSinglePost: FunctionComponent<FullSinglePostProps> = ({
         <div className={styles.container1}>
           <div className={styles.frameGroup}>
             <div className={styles.modeSwitchParent}>
-              <div className={styles.modeSwitch}>
-                <img className={styles.modeSwitchChild} alt="" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face" />
-                <div className={styles.skimModeWrapper}>
-                  <div className={styles.skimMode}>skim mode</div>
+              <div className={styles.modeSwitch} onClick={() => setIsSkimMode(!isSkimMode)}>
+                <div className={`${styles.modeOption} ${isSkimMode ? styles.active : ''}`}>
+                  <Zap className={styles.modeIcon} />
+                  <span className={styles.modeLabel}>skim mode</span>
                 </div>
+                <div className={`${styles.modeOption} ${!isSkimMode ? styles.active : ''}`}>
+                  <BookOpen className={styles.modeIcon} />
+                  <span className={styles.modeLabel}>focus mode</span>
+                </div>
+                <div className={`${styles.toggleSlider} ${isSkimMode ? styles.left : styles.right}`} />
               </div>
               <div className={styles.deployingABlockchainAppUsiParent}>
                 <div className={styles.deployingABlockchain}>{title}</div>

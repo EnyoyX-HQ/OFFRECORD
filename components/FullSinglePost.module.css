@@ -90,38 +90,77 @@
   border-right: 0.5px solid #303030;
 }
 
-.modeSwitchChild {
-  width: 32px;
+.modeSwitch {
+  position: relative;
   border-radius: 9999px;
-  max-height: 100%;
-  height: 32px;
-  object-fit: cover;
+  background-color: #18181b;
+  border: 1px solid #303030;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 240px;
+  height: 44px;
 }
 
-.skimMode {
+.modeSwitch:hover {
+  border-color: #404040;
+}
+
+.modeOption {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  z-index: 2;
   position: relative;
+  flex: 1;
+  justify-content: center;
+}
+
+.modeOption.active {
+  color: #fff;
+}
+
+.modeOption:not(.active) {
+  color: #6b7280;
+}
+
+.modeIcon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.modeLabel {
+  font-size: 12px;
   line-height: 14px;
   text-transform: lowercase;
-  color: #444a55;
+  font-weight: 500;
 }
 
-.skimModeWrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 0px 4px;
-}
-
-.modeSwitch {
+.toggleSlider {
+  position: absolute;
+  top: 6px;
+  width: calc(50% - 3px);
+  height: calc(100% - 12px);
+  background-color: #007aff;
   border-radius: 9999px;
-  background-color: #070708;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 4px;
-  gap: 4px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.toggleSlider.left {
+  left: 6px;
+}
+
+.toggleSlider.right {
+  left: calc(50% + 3px);
 }
 
 .deployingABlockchain {
