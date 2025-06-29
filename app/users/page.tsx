@@ -90,9 +90,6 @@ const Home: FunctionComponent = () => {
           </div>
         </div>
       </div>
-      <div className={styles.buildInOffRecordWrapper}>
-        <div className={styles.buildInOff}>© 2025 build in off record -</div>
-      </div>
     </div>
   );
 };
