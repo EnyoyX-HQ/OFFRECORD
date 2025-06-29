@@ -3,7 +3,7 @@
 import { FunctionComponent } from 'react';
 import styles from './CategoryList.module.css';
 import CardContent from './cards/CardContent';
-import WebSideBar from './layout/WebSideBar';
+import WebSideBar from '@/components/layout/WebSideBar';
 
 interface CategoryListProps {
   category?: string;
