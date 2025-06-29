@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -13,12 +12,7 @@ export default function Header() {
   }
   
   return (
-    <motion.nav 
-      initial={{ y: -100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-      className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-black"
-    >
+    <nav className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-black">
       <div className="w-full max-w-[1512px] mx-auto px-10 py-5 flex items-center justify-between">
         <Link href="/users" className="flex items-center space-x-2">
           <span className="text-gray-400 text-xl font-extrabold font-['Inter'] uppercase">OFF-RECORD</span>
@@ -35,6 +29,6 @@ export default function Header() {
           <span className="text-gray-400 text-base font-normal font-['Inter'] lowercase">become a volunteer</span>
         </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 }

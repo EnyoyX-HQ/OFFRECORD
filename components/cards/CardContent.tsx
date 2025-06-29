@@ -1,7 +1,6 @@
 "use client";
 
 import { FunctionComponent } from 'react';
-import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import styles from './CardContent.module.css';
 
@@ -19,19 +18,11 @@ const CardContent: FunctionComponent<CardContentProps> = ({ title }) => {
   };
 
   return (
-    <motion.div 
-      className={styles.frameWrapper} 
-      onClick={handleClick}
-      whileHover={{ 
-        y: -4,
-        transition: { duration: 0.2 }
-      }}
-      whileTap={{ scale: 0.98 }}
-    >
+    <div className={styles.frameWrapper} onClick={handleClick}>
       <div className={styles.settingUpYourNextJsProjecWrapper}>
         <div className={styles.settingUpYour}>{title}</div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

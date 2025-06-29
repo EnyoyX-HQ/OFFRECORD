@@ -1,7 +1,6 @@
 "use client";
 
 import { FunctionComponent } from 'react';
-import { motion } from 'framer-motion';
 import { useRouter } from 'next/navigation';
 import styles from './CardContentCategory.module.css';
 
@@ -28,20 +27,12 @@ const CardContentCategory: FunctionComponent<CardContentCategoryProps> = ({ titl
   };
 
   return (
-    <motion.div 
-      className={styles.frameWrapper} 
-      onClick={handleClick}
-      whileHover={{ 
-        y: -4,
-        transition: { duration: 0.2 }
-      }}
-      whileTap={{ scale: 0.98 }}
-    >
+    <div className={styles.frameWrapper} onClick={handleClick}>
       <div className={styles.bestPracticesParent}>
         <div className={styles.bestPractices}>{title}</div>
         <div className={styles.ollioIsNot}>{description}</div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
