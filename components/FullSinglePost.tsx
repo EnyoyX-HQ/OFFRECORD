@@ -3,6 +3,7 @@
 import { FunctionComponent, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import styles from './FullSinglePost.module.css';
+import WebSideBar from './layout/WebSideBar';
 
 interface FullSinglePostProps {
   title?: string;
@@ -22,27 +23,7 @@ const FullSinglePost: FunctionComponent<FullSinglePostProps> = ({
   return (
     <div className={styles.fullSinglePost}>
       <div className={styles.frameParent}>
-        <div className={styles.containerWrapper}>
-          <div className={styles.container}>
-            <div className={styles.avatarGroupParent}>
-              <div className={styles.avatarGroup}>
-                <div className={styles.avatarGroup}>
-                  <img className={styles.avatarIcon} alt="" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face" />
-                  <img className={styles.avatarIcon1} alt="" src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=32&h=32&fit=crop&crop=face" />
-                  <img className={styles.avatarIcon1} alt="" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face" />
-                  <img className={styles.avatarIcon1} alt="" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face" />
-                  <img className={styles.avatarIcon1} alt="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=32&h=32&fit=crop&crop=face" />
-                  <img className={styles.avatarIcon1} alt="" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=32&h=32&fit=crop&crop=face" />
-                  <img className={styles.avatarIcon1} alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=32&h=32&fit=crop&crop=face" />
-                </div>
-              </div>
-              <div className={styles.joinACommunity}>Join a community of locked-in founders shipping their ideas with ai</div>
-            </div>
-            <div className={styles.button}>
-              <div className={styles.label}>become a member</div>
-            </div>
-          </div>
-        </div>
+        <WebSideBar showCategories={false} showBecomeMember={true} />
         <div className={styles.container1}>
           <div className={styles.frameGroup}>
             <div className={styles.modeSwitchParent}>

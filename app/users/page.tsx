@@ -2,14 +2,14 @@ import { FunctionComponent } from 'react';
 import styles from './Home.module.css';
 import CardContentCategory from '@/components/cards/CardContentCategory';
 import CardContent from '@/components/cards/CardContent';
-import BecomeMember from '@/components/ui-custom/BecomeMember';
+import WebSideBar from '@/components/layout/WebSideBar';
 
 const Home: FunctionComponent = () => {
   return (
     <div className={styles.home}>
       <div className={styles.frameParent}>
         <div className={styles.containerWrapper}>
-          <BecomeMember />
+          <WebSideBar showCategories={false} showBecomeMember={true} />
         </div>
         <div className={styles.container1}>
           <div className={styles.frameGroup}>

@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
+
+.home {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 14px;
+  color: #9ca3af;
+  font-family: Inter;
+}
+
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.containerWrapper {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 56px 100px 0px;
+  box-sizing: border-box;
+  border-right: 0.5px solid #303030;
+}
+
+.container1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 0px 40px 40px;
+  gap: 80px;
+}
+
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.discoverNoBsInsightsToShiParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.discoverNoBsInsightsContainer {
+  align-self: stretch;
+  position: relative;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.discover {
+  color: #9ca3af;
+}
+
+.aCuratedCollection {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9ca3af;
+}
+
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.frameParent1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.curatedForYouWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.curatedForYou {
+  flex: 1;
+  position: relative;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.frameParent2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.frameParent4 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+.frameFrame {
+  flex: 1;
+  min-width: 200px;
+  height: 112px;
+  border-radius: 12px;
+  background-color: #18181b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.frameFrame:hover {
+  background-color: #27272a;
+}
+
+.productLogo {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.boltLogo {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.lovableLogo {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+}
+
+.replitLogo {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  color: white;
+}
+
+.cursorLogo {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  color: white;
+}
+
+.framerLogo {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+  color: white;
+}
+
+.webflowLogo {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+}
+
+.lastUpdatedOnDec42024Wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.lastUpdatedOn {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .frameParent {
+    flex-direction: column;
+  }
+  
+  .containerWrapper {
+    width: 100%;
+    padding: 20px 0;
+    border-right: none;
+    border-bottom: 0.5px solid #303030;
+  }
+  
+  .container1 {
+    padding: 20px;
+    gap: 40px;
+  }
+  
+  .frameContainer,
+  .frameParent2,
+  .frameParent4 {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .frameFrame {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .discoverNoBsInsightsContainer {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .curatedForYou {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  
+  .container1 {
+    gap: 32px;
+  }
+  
+  .frameGroup {
+    gap: 24px;
+  }
+}
