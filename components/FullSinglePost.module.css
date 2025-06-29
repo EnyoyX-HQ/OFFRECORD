@@ -9,6 +9,7 @@
   justify-content: flex-start;
   padding: 0px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .modeSwitch {
@@ -386,6 +387,11 @@
     flex-direction: column;
     padding: 0px 32px;
     gap: 32px;
+  }
+  
+  .sidebarContainer {
+    width: 100%;
+    position: relative;
   }
   
   .container1 {

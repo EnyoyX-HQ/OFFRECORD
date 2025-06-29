@@ -99,30 +99,35 @@
   gap: 20px;
   font-size: 16px;
   color: #fff;
+  margin-top: 60px; /* Add spacing between category list and become member section */
 }
 
 .websidebar {
-  height: 100%;
-  width: 420px; /* Increased by 40% from 300px */
-  position: relative;
+  width: 420px;
+  position: sticky;
+  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 183px 56px 100px 0px; /* Increased padding proportionally */
+  padding: 80px 56px 100px 0px;
   box-sizing: border-box;
-  gap: 0px;
   text-align: left;
   font-size: 14px;
   color: #9ca3af;
   font-family: Inter;
   border-right: 0.5px solid #303030;
+  background-color: #000;
+  z-index: 10;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
   .websidebar {
     width: 100%;
+    position: relative;
+    height: auto;
     padding: 20px 0;
     border-right: none;
     border-bottom: 0.5px solid #303030;
@@ -136,6 +141,10 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+  
+  .container {
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -146,5 +155,9 @@
   
   .designParent {
     gap: 16px;
+  }
+  
+  .container {
+    margin-top: 24px;
   }
 }
