@@ -3,7 +3,6 @@ import styles from './Home.module.css';
 import CardContentCategory from '@/components/cards/CardContentCategory';
 import CardContent from '@/components/cards/CardContent';
 import BecomeMember from '@/components/ui-custom/BecomeMember';
-import Footer from '@/components/layout/Footer';
 
 const Home: FunctionComponent = () => {
   return (
@@ -94,7 +93,6 @@ const Home: FunctionComponent = () => {
       <div className={styles.buildInOffRecordWrapper}>
         <div className={styles.buildInOff}>© 2025 build in off record -</div>
       </div>
-      <Footer />
     </div>
   );
 };

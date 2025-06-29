@@ -3,7 +3,6 @@
 import { FunctionComponent } from 'react';
 import styles from './CategoryList.module.css';
 import CardContent from './cards/CardContent';
-import Footer from './layout/Footer';
 
 interface CategoryListProps {
   category?: string;
@@ -73,7 +72,6 @@ const CategoryList: FunctionComponent<CategoryListProps> = ({
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -17,7 +17,6 @@ import {
   Calendar,
   TrendingUp
 } from 'lucide-react';
-import Footer from '@/components/layout/Footer';
 
 const content = [
   {
@@ -289,7 +288,6 @@ export default function AdminContentPage() {
           </CardContent>
         </Card>
       </div>
-      <Footer />
     </div>
   );
 }

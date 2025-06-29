@@ -16,7 +16,6 @@ import {
   Ban,
   Eye
 } from 'lucide-react';
-import Footer from '@/components/layout/Footer';
 
 const users = [
   {
@@ -269,7 +268,6 @@ export default function AdminUsersPage() {
           </CardContent>
         </Card>
       </div>
-      <Footer />
     </div>
   );
 }

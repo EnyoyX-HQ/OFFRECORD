@@ -17,7 +17,6 @@ import {
   Video,
   Link
 } from 'lucide-react';
-import Footer from '@/components/layout/Footer';
 
 const categories = ['React', 'TypeScript', 'Next.js', 'CSS', 'JavaScript', 'Node.js', 'Database', 'API'];
 const contentTypes = [
@@ -258,7 +257,6 @@ export default function CreateContentPage() {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
