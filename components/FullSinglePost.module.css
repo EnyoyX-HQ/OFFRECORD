@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
+
+.avatarIcon {
+  width: 32px;
+  position: relative;
+  border-radius: 9999px;
+  height: 32px;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+.avatarIcon1 {
+  width: 32px;
+  position: relative;
+  border-radius: 9999px;
+  height: 32px;
+  object-fit: cover;
+  margin-left: -12px;
+  border: 2px solid #000;
+}
+
+.avatarGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.joinACommunity {
+  align-self: stretch;
+  position: relative;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #9ca3af;
+}
+
+.avatarGroupParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.label {
+  position: relative;
+  letter-spacing: -0.23px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.button {
+  border-radius: 40px;
+  background-color: #007aff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  font-size: 15px;
+  font-family: 'SF Pro';
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #0056cc;
+}
+
+.container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.containerWrapper {
+  align-self: stretch;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 183px 40px 100px 0px;
+  box-sizing: border-box;
+  border-right: 0.5px solid #303030;
+}
+
+.modeSwitchChild {
+  width: 32px;
+  border-radius: 9999px;
+  max-height: 100%;
+  height: 32px;
+  object-fit: cover;
+}
+
+.skimMode {
+  position: relative;
+  line-height: 14px;
+  text-transform: lowercase;
+  color: #444a55;
+}
+
+.skimModeWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 4px;
+}
+
+.modeSwitch {
+  border-radius: 9999px;
+  background-color: #070708;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px;
+  gap: 4px;
+}
+
+.deployingABlockchain {
+  align-self: stretch;
+  position: relative;
+  font-size: 32px;
+  text-transform: lowercase;
+  font-weight: 800;
+  background: linear-gradient(128.64deg, #7a96ac, #eaeff3 18%, #c2d4e1 31.5%, #fff 49.19%, #d4dee5 61.5%, #abbdc8 78.5%, #bccad7 95.5%), radial-gradient(50% 50% at 50% 50%, #ff9fea, rgba(255, 255, 255, 0)), radial-gradient(50% 50% at 50% 50%, #a349ef 42.19%, #ff65e6), #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1.2;
+}
+
+.contributors {
+  position: relative;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #9ca3af;
+}
+
+.frameChild {
+  width: 24px;
+  position: relative;
+  border-radius: 9999px;
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  height: 24px;
+}
+
+.contributorsParent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.frameItem {
+  width: 2px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #9ca3af;
+  height: 2px;
+}
+
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.aCuratedCollection {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #9ca3af;
+}
+
+.aCuratedCollectionOfInsighWrapper {
+  align-self: stretch;
+  border-radius: 20px;
+  background-color: #070708;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.deployingABlockchainAppUsiParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 16px;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.modeSwitchParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: #444a55;
+}
+
+.overview {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+  text-transform: lowercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+.ollioIsNot {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #9ca3af;
+}
+
+.apiKeys1 {
+  text-decoration: underline;
+}
+
+.apiKeys {
+  color: #007aff;
+  text-decoration: none;
+}
+
+.apiKeys:hover {
+  color: #0056cc;
+}
+
+.inTheOllioDashboardNaviga {
+  margin: 0;
+}
+
+.inTheQuickCopySectionCop {
+  margin-bottom: 8px;
+}
+
+.inTheOllioDashboardNaviga1 {
+  margin: 16px 0;
+  font-family: inherit;
+  font-size: inherit;
+  padding-left: 21px;
+}
+
+.deployingABlockchain1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+  text-transform: lowercase;
+  font-weight: 600;
+  color: #9ca3af;
+}
+
+.deployingABlockchainAppUsiWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 28px;
+}
+
+.frameWrapper {
+  align-self: stretch;
+  border-radius: 12px;
+  background-color: #070708;
+  height: 230px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: #9ca3af;
+}
+
+.olliomiddlewareProvidesSea {
+  align-self: stretch;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9ca3af;
+}
+
+.frameGroup {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.frameIcon {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: #9ca3af;
+}
+
+.itWasHelpful {
+  position: relative;
+  line-height: 24px;
+  color: #9ca3af;
+}
+
+.frameDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 40px;
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+.lastUpdatedOn {
+  flex: 1;
+  position: relative;
+  line-height: 20px;
+  color: #9ca3af;
+}
+
+.lastUpdatedOnDec42024Wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  color: #9ca3af;
+}
+
+.container1 {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px 0px 100px;
+  box-sizing: border-box;
+  gap: 64px;
+  font-size: 18px;
+}
+
+.onThisPage {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  text-transform: lowercase;
+  font-weight: 500;
+  color: #fff;
+}
+
+.overview1 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #fff;
+}
+
+.installSetup {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #9ca3af;
+}
+
+.frameWrapper1 {
+  width: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 80px 0px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0px 64px;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fullSinglePost {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-family: Inter;
+  min-height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .frameParent {
+    flex-direction: column;
+    padding: 0px 32px;
+    gap: 32px;
+  }
+  
+  .containerWrapper {
+    width: 100%;
+    padding: 40px 0px;
+    border-right: none;
+    border-bottom: 0.5px solid #303030;
+  }
+  
+  .container1 {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  
+  .frameWrapper1 {
+    width: 100%;
+    padding: 40px 0px;
+  }
+  
+  .deployingABlockchain {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .frameParent {
+    padding: 0px 20px;
+  }
+  
+  .deployingABlockchain {
+    font-size: 24px;
+  }
+  
+  .frameContainer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .frameDiv {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

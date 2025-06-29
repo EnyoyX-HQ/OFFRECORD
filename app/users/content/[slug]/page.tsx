@@ -1,4 +1,5 @@
 import { FunctionComponent } from 'react';
+import FullSinglePost from '@/components/FullSinglePost';
 
 interface ContentPageProps {
   params: {
@@ -24,23 +25,7 @@ const ContentPage: FunctionComponent<ContentPageProps> = ({ params }) => {
   // Convert slug back to title
   const title = slug.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
   
-  return (
-    <div className="min-h-screen bg-black text-white">
-      <div className="container mx-auto px-6 py-16">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl font-bold mb-8 text-white">{title}</h1>
-          <div className="prose prose-invert max-w-none">
-            <p className="text-lg text-gray-300 mb-6">
-              This is a detailed article about {title.toLowerCase()}. Content would be loaded here based on the slug: {slug}
-            </p>
-            <p className="text-gray-400">
-              In a real application, this content would be fetched from a CMS, markdown files, or a database based on the slug parameter.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+  return <FullSinglePost title={title.toLowerCase()} />;
 };
 
 export default ContentPage;
