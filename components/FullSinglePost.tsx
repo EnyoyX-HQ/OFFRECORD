@@ -23,7 +23,9 @@ const FullSinglePost: FunctionComponent<FullSinglePostProps> = ({
   return (
     <div className={styles.fullSinglePost}>
       <div className={styles.frameParent}>
-        <WebSideBar showCategories={false} showBecomeMember={true} />
+        <div className={styles.sidebarContainer}>
+          <WebSideBar showCategories={false} showBecomeMember={true} />
+        </div>
         <div className={styles.container1}>
           <div className={styles.frameGroup}>
             <div className={styles.modeSwitchParent}>

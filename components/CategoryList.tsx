@@ -19,7 +19,9 @@ const CategoryList: FunctionComponent<CategoryListProps> = ({
   return (
     <div className={styles.categorylist}>
       <div className={styles.frameParent}>
-        <WebSideBar showCategories={true} showBecomeMember={true} />
+        <div className={styles.frameGroup}>
+          <WebSideBar showCategories={true} showBecomeMember={true} />
+        </div>
         <div className={styles.container1}>
           <div className={styles.bestPracticesForNonTechnicParent}>
             <div className={styles.bestPracticesFor}>{title}</div>
