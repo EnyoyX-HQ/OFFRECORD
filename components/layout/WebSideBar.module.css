@@ -9,7 +9,6 @@
   color: #9ca3af;
   cursor: pointer;
   transition: color 0.2s ease;
-  padding: 8px 0;
 }
 
 .design:hover {
@@ -23,8 +22,6 @@
   text-transform: lowercase;
   color: #fff;
   cursor: pointer;
-  padding: 8px 0;
-  font-weight: 500;
 }
 
 .designParent {
@@ -42,8 +39,6 @@
   border-radius: 9999px;
   height: 32px;
   object-fit: cover;
-  border: 2px solid #000;
-  z-index: 7;
 }
 
 .avatarIcon1 {
@@ -52,7 +47,6 @@
   border-radius: 9999px;
   height: 32px;
   object-fit: cover;
-  border: 2px solid #000;
   margin-left: -12px;
 }
 
@@ -108,17 +102,16 @@
 }
 
 .websidebar {
-  height: auto;
-  min-height: 100vh;
+  height: 100%;
   width: 420px; /* Increased by 40% from 300px */
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   padding: 183px 56px 100px 0px; /* Increased padding proportionally */
   box-sizing: border-box;
-  gap: 40px;
+  gap: 0px;
   text-align: left;
   font-size: 14px;
   color: #9ca3af;
