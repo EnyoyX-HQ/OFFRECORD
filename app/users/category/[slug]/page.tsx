@@ -7,6 +7,19 @@ interface CategoryPageProps {
   };
 }
 
+// Required for static export
+export async function generateStaticParams() {
+  return [
+    { slug: 'best-practices' },
+    { slug: 'prompting' },
+    { slug: 'build-with' },
+    { slug: 'design' },
+    { slug: 'engineering' },
+    { slug: 'goto-market' },
+    { slug: 'compliance' }
+  ];
+}
+
 const CategoryPage: FunctionComponent<CategoryPageProps> = ({ params }) => {
   const { slug } = params;
   
@@ -30,6 +43,24 @@ const CategoryPage: FunctionComponent<CategoryPageProps> = ({ params }) => {
           category: 'engineering',
           title: 'build with modern tools',
           description: 'Discover the latest tools, frameworks, and platforms that modern founders use to ship faster and build better products.'
+        };
+      case 'design':
+        return {
+          category: 'design',
+          title: 'design resources and inspiration',
+          description: 'Curated design resources, UI/UX best practices, and creative inspiration for modern digital products.'
+        };
+      case 'goto-market':
+        return {
+          category: 'goto-market',
+          title: 'go-to-market strategies',
+          description: 'Strategic insights and proven methodologies for launching and scaling your product in the market.'
+        };
+      case 'compliance':
+        return {
+          category: 'compliance',
+          title: 'compliance and legal guidance',
+          description: 'Essential compliance requirements, legal considerations, and regulatory guidance for modern businesses.'
         };
       default:
         return {
