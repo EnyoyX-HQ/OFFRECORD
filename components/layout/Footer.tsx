@@ -1,3 +1,5 @@
+"use client";
+
 import { FunctionComponent } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Footer.module.css';
