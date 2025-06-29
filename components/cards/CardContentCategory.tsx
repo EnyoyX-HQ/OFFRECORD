@@ -14,7 +14,11 @@ const CardContentCategory: FunctionComponent<CardContentCategoryProps> = ({ titl
   
   const handleClick = () => {
     // Create a slug from the title and navigate to category page
-    let slug = title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    let slug = title.toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters first
+      .replace(/\s+/g, '-')     // Replace spaces with hyphens
+      .replace(/-+/g, '-')      // Replace multiple hyphens with single hyphen
+      .replace(/^-|-$/g, '');   // Remove leading/trailing hyphens
     
     // Handle special cases for routing
     if (slug === 'build-with') {

@@ -13,7 +13,11 @@ const CardContent: FunctionComponent<CardContentProps> = ({ title }) => {
   
   const handleClick = () => {
     // Create a slug from the title
-    const slug = title.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+    const slug = title.toLowerCase()
+      .replace(/[^\w\s-]/g, '') // Remove special characters first
+      .replace(/\s+/g, '-')     // Replace spaces with hyphens
+      .replace(/-+/g, '-')      // Replace multiple hyphens with single hyphen
+      .replace(/^-|-$/g, '');   // Remove leading/trailing hyphens
     router.push(`/users/content/${slug}`);
   };
 
