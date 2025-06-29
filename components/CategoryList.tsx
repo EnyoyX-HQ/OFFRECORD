@@ -56,31 +56,24 @@ const CategoryList: FunctionComponent<CategoryListProps> = ({
                 <div className={styles.curatedForYou}>curated for you</div>
               </div>
               <div className={styles.frameDiv}>
-                <div className={styles.frameWrapper}>
-                  <div className={styles.settingUpYourNextJsProjecWrapper}>
-                    <div className={styles.settingUpYour}>Setting up your next js project for scalability</div>
-                  </div>
-                </div>
-                <div className={styles.frameWrapper}>
-                  <div className={styles.settingUpYourNextJsProjecWrapper}>
-                    <div className={styles.settingUpYour}>Deploying a blockchain app using algorand</div>
-                  </div>
-                </div>
-                <div className={styles.frameWrapper}>
-                  <div className={styles.settingUpYourNextJsProjecWrapper}>
-                    <div className={styles.settingUpYour}>{`Setting up a test & production server for your application`}</div>
-                  </div>
-                </div>
+                <CardContent title="Setting up your next js project for scalability" />
+                <CardContent title="Deploying a blockchain app using algorand" />
+                <CardContent title="Setting up a test & production server for your application" />
               </div>
               <div className={styles.frameDiv}>
-                <div className={styles.frameWrapper}>
-              <CardContent title="Setting up your next js project for scalability" />
-              <CardContent title="Deploying a blockchain app using algorand" />
-              <CardContent title="Setting up a test & production server for your application" />
+                <CardContent title="Building secure authentication systems" />
+                <CardContent title="Database optimization strategies" />
+                <CardContent title="API design best practices" />
+              </div>
             </div>
           </div>
-              <CardContent title="Building secure authentication systems" />
-              <CardContent title="Database optimization strategies" />
-              <CardContent title="API design best practices" />
-  )
-}
+          <div className={styles.lastUpdatedOnDec42024Wrapper}>
+            <div className={styles.lastUpdatedOn}>Last updated on Dec 4, 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CategoryList;
