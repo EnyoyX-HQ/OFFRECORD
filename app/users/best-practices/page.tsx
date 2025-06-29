@@ -1,11 +1,16 @@
+"use client";
+
+import { FunctionComponent } from 'react';
 import CategoryList from '@/components/CategoryList';
 
-export default function BestPracticesPage() {
+const BestPracticesPage: FunctionComponent = () => {
   return (
     <CategoryList 
-      category="engineering"
+      category="best-practices"
       title="best practices for non technical founders"
       description="A curated collection of insights, tools, and best practices for fast forward thinking founders shipping their ideas with AI. Stay ahead of the curve with resources that matter."
     />
   );
-}
+};
+
+export default BestPracticesPage;
