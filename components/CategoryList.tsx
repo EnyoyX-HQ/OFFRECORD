@@ -82,3 +82,5 @@ const CategoryList: FunctionComponent<CategoryListProps> = ({
               <CardContent title="Building secure authentication systems" />
               <CardContent title="Database optimization strategies" />
               <CardContent title="API design best practices" />
+  )
+}
