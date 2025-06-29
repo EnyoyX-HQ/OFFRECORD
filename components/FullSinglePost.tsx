@@ -1,7 +1,7 @@
 "use client";
 
 import { FunctionComponent, useState } from 'react';
-import { BookOpen, Zap } from 'lucide-react';
+import { Moon, Sun } from 'lucide-react';
 import styles from './FullSinglePost.module.css';
 
 interface FullSinglePostProps {
@@ -17,7 +17,7 @@ const FullSinglePost: FunctionComponent<FullSinglePostProps> = ({
   readTime = "10 min read",
   description = "A curated collection of insights, tools, and best practices for fast forward thinking founders shipping their ideas with AI. Stay ahead of the curve with resources that matter."
 }) => {
-  const [isSkimMode, setIsSkimMode] = useState(true);
+  const [isNightMode, setIsNightMode] = useState(true);
 
   return (
     <div className={styles.fullSinglePost}>
@@ -46,16 +46,15 @@ const FullSinglePost: FunctionComponent<FullSinglePostProps> = ({
         <div className={styles.container1}>
           <div className={styles.frameGroup}>
             <div className={styles.modeSwitchParent}>
-              <div className={styles.modeSwitch} onClick={() => setIsSkimMode(!isSkimMode)}>
-                <div className={`${styles.modeOption} ${isSkimMode ? styles.active : ''}`}>
-                  <Zap className={styles.modeIcon} />
-                  <span className={styles.modeLabel}>skim mode</span>
+              <div className={styles.modeSwitch} onClick={() => setIsNightMode(!isNightMode)}>
+                <div className={`${styles.modeOption} ${!isNightMode ? styles.active : ''}`}>
+                  <Sun className={styles.modeIcon} />
+                  <span className={styles.modeLabel}>DAYMODE</span>
                 </div>
-                <div className={`${styles.modeOption} ${!isSkimMode ? styles.active : ''}`}>
-                  <BookOpen className={styles.modeIcon} />
-                  <span className={styles.modeLabel}>focus mode</span>
+                <div className={`${styles.modeOption} ${isNightMode ? styles.active : ''}`}>
+                  <Moon className={styles.modeIcon} />
+                  <span className={styles.modeLabel}>NIGHTMODE</span>
                 </div>
-                <div className={`${styles.toggleSlider} ${isSkimMode ? styles.left : styles.right}`} />
               </div>
               <div className={styles.deployingABlockchainAppUsiParent}>
                 <div className={styles.deployingABlockchain}>{title}</div>
