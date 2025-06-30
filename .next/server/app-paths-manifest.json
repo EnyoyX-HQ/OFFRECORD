@@ -1,6 +1,1 @@
-{
-  "/users/page": "app/users/page.js",
-  "/users/best-practices/page": "app/users/best-practices/page.js",
-  "/users/category/[slug]/page": "app/users/category/[slug]/page.js",
-  "/users/content/[slug]/page": "app/users/content/[slug]/page.js"
-}
+{}

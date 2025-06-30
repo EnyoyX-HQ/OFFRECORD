@@ -1,0 +1,15 @@
+.buildInOffRecordWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  border-top: 0.5px solid #303030;
+}
+
+.buildInOff {
+  flex: 1;
+  position: relative;
+  line-height: 24px;
+}
