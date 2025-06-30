@@ -1,7 +1,7 @@
 "use client";
 
 import { FunctionComponent } from 'react';
-import CategoryList from '@/components/CategoryList/CategoryList';
+import CategoryList from '../../../components/CategoryList/CategoryList';
 
 const BestPracticesPage: FunctionComponent = () => {
   return (

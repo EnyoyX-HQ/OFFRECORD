@@ -1,4 +1,4 @@
-import CategoryList from '@/components/CategoryList/CategoryList';
+import CategoryList from '../../../components/CategoryList/CategoryList';
 
 export default function ContentPage() {
   return (

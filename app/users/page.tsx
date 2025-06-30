@@ -1,8 +1,8 @@
 import { FunctionComponent } from 'react';
 import styles from './Home.module.css';
-import CardContentCategory from '@/components/cards/CardContentCategory';
-import CardContent from '@/components/cards/CardContent';
-import WebSideBar from '@/components/layout/WebSideBar/WebSideBar';
+import CardContentCategory from '../../components/cards/CardContentCategory';
+import CardContent from '../../components/cards/CardContent';
+import WebSideBar from '../../components/layout/WebSideBar/WebSideBar';
 
 const Home: FunctionComponent = () => {
   return (
