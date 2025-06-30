@@ -27,6 +27,17 @@
   width: 100%;
 }
 
+.container1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 0px 40px 64px;
+  gap: 80px;
+  margin-left: 420px; /* Account for fixed sidebar width */
+}
+
 /* Responsive margins for larger screens */
 @media (min-width: 2500px) {
   .frameParent {
@@ -230,8 +241,11 @@
   color: #9ca3af;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
+  .container1 {
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
+  
   .frameParent {
     flex-direction: column;
   }
@@ -260,6 +274,11 @@
 }
 
 @media (max-width: 768px) {
+  .container1 {
+    padding: 20px;
+    gap: 32px;
+  }
+  
   .discoverNoBsInsightsContainer {
     font-size: 32px;
     line-height: 40px;
@@ -277,4 +296,3 @@
   .frameGroup {
     gap: 24px;
   }
-}
