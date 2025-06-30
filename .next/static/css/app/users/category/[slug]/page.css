@@ -379,6 +379,21 @@
   margin: 0 auto;
 }
 
+/* Responsive margins for larger screens */
+@media (min-width: 2500px) {
+  .CategoryList_frameParent__GXOn8 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 3000px) {
+  .CategoryList_frameParent__GXOn8 {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
 .CategoryList_categorylist__rIkyE {
   width: 100%;
   position: relative;
