@@ -496,7 +496,8 @@
 .WebSideBar_joinACommunity__HLviJ {
   align-self: stretch;
   position: relative;
-  line-height: 24px;
+  line-height: 20px;
+  font-size: 14px;
   text-transform: lowercase;
   color: #9ca3af;
 }
