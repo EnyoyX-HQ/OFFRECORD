@@ -3,7 +3,6 @@
 import { FunctionComponent, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import styles from './FullSinglePost.module.css';
-import WebSideBar from '../layout/WebSideBar/WebSideBar';
 
 interface FullSinglePostProps {
   title?: string;
@@ -23,9 +22,6 @@ const FullSinglePost: FunctionComponent<FullSinglePostProps> = ({
   return (
     <div className={styles.fullSinglePost}>
       <div className={styles.frameParent}>
-        <div className={styles.sidebarContainer}>
-          <WebSideBar showCategories={false} showBecomeMember={true} />
-        </div>
         <div className={styles.container1}>
           <div className={styles.frameGroup}>
             <div className={styles.modeSwitchParent}>

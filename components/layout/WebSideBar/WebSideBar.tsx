@@ -16,6 +16,11 @@ const WebSideBar: FunctionComponent<WebSideBarProps> = ({
   const router = useRouter();
   const pathname = usePathname();
 
+  // Don't show sidebar on admin pages
+  if (pathname.startsWith('/admin')) {
+    return null;
+  }
+
   const categories = [
     { id: 'design', label: 'design', path: '/users/category/design' },
     { id: 'engineering', label: 'engineering', path: '/users/category/engineering' },

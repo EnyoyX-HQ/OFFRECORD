@@ -1,62 +1,82 @@
-/*!*******************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/layout/Header.module.css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/layout/WebSideBar/WebSideBar.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
 
-.Header_offRecord__gjv2a {
+.WebSideBar_design__DU4JE {
+  align-self: stretch;
   position: relative;
-  line-height: 32px;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-.Header_frameIcon__sI7SY {
-  width: 16px;
-  position: relative;
-  height: 16px;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.Header_community__BjbdP {
-  position: relative;
-  line-height: 24px;
+  line-height: 20px;
   text-transform: lowercase;
+  color: #9ca3af;
+  cursor: pointer;
+  transition: color 0.2s ease;
 }
 
-.Header_frameGroup__i0bCD {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 8px;
+.WebSideBar_design__DU4JE:hover {
   color: #fff;
 }
 
-.Header_fellowshipWrapper__Rvvwq {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
+.WebSideBar_engineering__VzpI7 {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #fff;
+  cursor: pointer;
 }
 
-.Header_frameParent___KtuB {
+.WebSideBar_designParent__aUi_q {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.WebSideBar_avatarIcon__HxMQt {
+  width: 32px;
+  position: relative;
+  border-radius: 9999px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.WebSideBar_avatarIcon1__kjymU {
+  width: 32px;
+  position: relative;
+  border-radius: 9999px;
+  height: 32px;
+  object-fit: cover;
+  margin-left: -12px;
+}
+
+.WebSideBar_avatarGroup___qsW3 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: center;
-  gap: 16px;
-  font-size: 16px;
+  justify-content: flex-start;
 }
 
-.Header_label__QvhF3 {
+.WebSideBar_joinACommunity__HLviJ {
+  align-self: stretch;
+  position: relative;
+  line-height: 20px;
+  font-size: 14px;
+  text-transform: lowercase;
+  color: #9ca3af;
+}
+
+.WebSideBar_label__koteq {
   position: relative;
   letter-spacing: -0.23px;
   line-height: 20px;
+  color: #fff;
 }
 
-.Header_button__9VT7V {
+.WebSideBar_button__jrTuS {
   border-radius: 40px;
   background-color: #007aff;
   display: flex;
@@ -64,66 +84,72 @@
   align-items: center;
   justify-content: center;
   padding: 4px 10px;
-  text-align: left;
   font-size: 15px;
-  color: #fff;
   font-family: 'SF Pro';
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.Header_offRecordParent__ouSvI {
+.WebSideBar_button__jrTuS:hover {
+  background-color: #0056cc;
+}
+
+.WebSideBar_container__iiHwb {
   align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0px;
-}
-
-.Header_header__ZPN_X {
-  width: 100%;
-  position: relative;
-  background-color: #000;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  padding: 20px 40px;
-  box-sizing: border-box;
-  text-align: center;
-  font-size: 20px;
-  color: #9ca3af;
-  font-family: Inter;
-}
-/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/layout/Footer/Footer.module.css ***!
-  \**************************************************************************************************************************************************************************************************************************************************************************************/
-.Footer_buildInOffRecordWrapper__VQODY {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 40px;
-  border-top: 0.5px solid #303030;
+  gap: 20px;
+  font-size: 16px;
+  color: #fff;
 }
 
-.Footer_buildInOff__mghy4 {
-  flex: 1 1;
-  position: relative;
-  line-height: 24px;
+.WebSideBar_websidebar__Ib9iN {
+  width: 320px;
+  position: fixed;
+  top: 80px; /* Account for header height */
+  left: 0;
+  height: calc(100vh - 80px); /* Subtract header height */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 40px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 14px;
+  color: #9ca3af;
+  font-family: Inter;
+  border-right: 0.5px solid #303030;
+  background-color: #000;
+  z-index: 40;
+  overflow-y: auto;
 }
-/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
-  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-@font-face {
-  font-family: '__Inter_Fallback_725fdb';
-  src: local("Arial");
-  ascent-override:90.20%;
-  descent-override:22.48%;
-  line-gap-override:0.00%;
-  size-adjust:107.40%;
-}@font-face {font-family: '__Inter_Fallback_Fallback_725fdb';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
-}.__className_725fdb {font-family: '__Inter_Fallback_725fdb', '__Inter_Fallback_Fallback_725fdb';font-style: normal
+
+.WebSideBar_sidebarContent__XClXh {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex: 1 1;
+  width: 100%;
+}
+
+.WebSideBar_categoriesSection__CrYEU {
+  width: 100%;
+}
+
+.WebSideBar_becomeMemberSection__xreaO {
+  width: 100%;
+  margin-top: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .WebSideBar_websidebar__Ib9iN {
+    display: none;
+  }
 }
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[12].use[3]!./app/globals.css ***!
@@ -165,14 +191,12 @@
 @layer base {
   * {
     @apply border-border;
-    /* Prevent layout shifts during loading */
     box-sizing: border-box;
   }
   body {
     @apply bg-background text-foreground;
     margin: 0;
     line-height: normal;
-    padding-top: 80px; /* Add padding to account for fixed header */
   }
   
   /* Prevent layout shifts for images */
@@ -211,4 +235,51 @@
   .animate-pulse {
     animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+
+  /* Layout Components */
+  .sidebar-container {
+    @apply w-80 flex-shrink-0;
+  }
+  
+  .content-body {
+    @apply flex-1 overflow-x-hidden;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .sidebar-container {
+      @apply hidden;
+    }
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/layout/Footer/Footer.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.Footer_buildInOffRecordWrapper__VQODY {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  border-top: 0.5px solid #303030;
+}
+
+.Footer_buildInOff__mghy4 {
+  flex: 1 1;
+  position: relative;
+  line-height: 24px;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[2].use[1]!./node_modules/next/dist/build/webpack/loaders/next-font-loader/index.js??ruleSet[1].rules[13].oneOf[2].use[2]!./node_modules/next/font/google/target.css?{"path":"app/layout.tsx","import":"Inter","arguments":[{"subsets":["latin"]}],"variableName":"inter"} ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@font-face {
+  font-family: '__Inter_Fallback_725fdb';
+  src: local("Arial");
+  ascent-override:90.20%;
+  descent-override:22.48%;
+  line-gap-override:0.00%;
+  size-adjust:107.40%;
+}@font-face {font-family: '__Inter_Fallback_Fallback_725fdb';src: local("Arial");ascent-override: 90.20%;descent-override: 22.48%;line-gap-override: 0.00%;size-adjust: 107.40%
+}.__className_725fdb {font-family: '__Inter_Fallback_725fdb', '__Inter_Fallback_Fallback_725fdb';font-style: normal
 }

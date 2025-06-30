@@ -14,64 +14,20 @@
   font-size: 14px;
   color: #9ca3af;
   font-family: Inter;
+  min-height: 100vh;
 }
 
-.frameParent {
-  align-self: stretch;
+.container1 {
+  flex: 1;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 1400px;
-  margin: 0 auto;
+  padding: 80px 64px 40px 64px;
+  gap: 80px;
+  max-width: 1200px;
   width: 100%;
-}
-
-.container1 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 120px 0px 40px 64px; /* Add top padding for header */
-  gap: 80px;
-  margin-left: 270px; /* Account for fixed sidebar width */
-}
-
-/* Responsive margins for larger screens */
-@media (min-width: 2500px) {
-  .frameParent {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-}
-
-@media (min-width: 3000px) {
-  .frameParent {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
-
-.containerWrapper {
-  width: 420px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0px;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.container1 {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 40px 0px 40px 40px;
-  gap: 80px;
+  margin: 0 auto;
 }
 
 .frameGroup {
@@ -241,24 +197,10 @@
   color: #9ca3af;
 }
 
+/* Responsive Design */
 @media (max-width: 1024px) {
   .container1 {
-    margin-left: 0; /* Remove margin on smaller screens */
-    padding-top: 100px; /* Adjust for smaller header on mobile */
-  }
-  
-  .frameParent {
-    flex-direction: column;
-  }
-  
-  .containerWrapper {
-    width: 100%;
-    position: relative;
-    padding: 20px 0;
-  }
-  
-  .container1 {
-    padding: 20px;
+    padding: 40px 32px;
     gap: 40px;
   }
   
@@ -275,11 +217,6 @@
 }
 
 @media (max-width: 768px) {
-  .container1 {
-    padding: 100px 20px 20px 20px; /* Maintain header spacing */
-    gap: 32px;
-  }
-  
   .discoverNoBsInsightsContainer {
     font-size: 32px;
     line-height: 40px;
@@ -291,10 +228,11 @@
   }
   
   .container1 {
+    padding: 20px;
     gap: 32px;
   }
   
   .frameGroup {
     gap: 24px;
   }
-  }
+}

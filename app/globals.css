@@ -35,14 +35,12 @@
 @layer base {
   * {
     @apply border-border;
-    /* Prevent layout shifts during loading */
     box-sizing: border-box;
   }
   body {
     @apply bg-background text-foreground;
     margin: 0;
     line-height: normal;
-    padding-top: 80px; /* Add padding to account for fixed header */
   }
   
   /* Prevent layout shifts for images */
@@ -80,5 +78,21 @@
   
   .animate-pulse {
     animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Layout Components */
+  .sidebar-container {
+    @apply w-80 flex-shrink-0;
+  }
+  
+  .content-body {
+    @apply flex-1 overflow-x-hidden;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .sidebar-container {
+      @apply hidden;
+    }
   }
 }

@@ -1,19 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
 
-.frameGroup {
-  width: 270px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0px;
-  box-sizing: border-box;
-  position: relative;
-}
-
 .bestPracticesFor {
-  width: 757px;
+  width: 100%;
   position: relative;
   text-transform: lowercase;
   font-weight: 800;
@@ -22,10 +11,11 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
   line-height: 1.2;
+  font-size: 48px;
 }
 
 .aCuratedCollection {
-  width: 680px;
+  width: 100%;
   position: relative;
   font-size: 16px;
   line-height: 24px;
@@ -43,7 +33,7 @@
 }
 
 .curatedForYou {
-  width: 597px;
+  width: 100%;
   position: relative;
   text-transform: lowercase;
   font-weight: 500;
@@ -51,6 +41,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  font-size: 20px;
 }
 
 .curatedForYouWrapper {
@@ -59,7 +50,6 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  font-size: 20px;
 }
 
 .frameDiv {
@@ -110,36 +100,11 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 160px 0px 100px 64px; /* Add top padding for header */
+  padding: 80px 64px 100px 64px;
   gap: 40px;
-  font-size: 48px;
-}
-
-.frameParent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0px 64px 0px 0px;
-  gap: 0px;
-  max-width: 1400px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-}
-
-/* Responsive margins for larger screens */
-@media (min-width: 2500px) {
-  .frameParent {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media (min-width: 3000px) {
-  .frameParent {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
 }
 
 .categorylist {
@@ -161,41 +126,17 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .container1 {
-    padding-top: 120px; /* Adjust for mobile header */
-  }
-  
-  .frameParent {
-    flex-direction: column;
-    padding: 0px 32px;
-    gap: 32px;
-  }
-  
-  .frameGroup {
-    width: 100%;
-    position: relative;
+    padding: 40px 32px;
   }
   
   .bestPracticesFor {
-    width: 100%;
     font-size: 36px;
-  }
-  
-  .aCuratedCollection {
-    width: 100%;
-  }
-  
-  .curatedForYou {
-    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .container1 {
-    padding-top: 100px; /* Maintain header spacing on mobile */
-  }
-  
-  .frameParent {
-    padding: 0px 20px;
+    padding: 20px;
   }
   
   .bestPracticesFor {
