@@ -20,7 +20,7 @@
   align-self: stretch;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: stretch;
   justify-content: flex-start;
   max-width: 1400px;
   margin: 0 auto;
