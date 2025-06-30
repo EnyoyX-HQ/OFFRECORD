@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
+
+.offRecord {
+  position: relative;
+  line-height: 32px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.frameIcon {
+  width: 16px;
+  position: relative;
+  height: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.community {
+  position: relative;
+  line-height: 24px;
+  text-transform: lowercase;
+}
+
+.frameGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  color: #fff;
+}
+
+.fellowshipWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.frameParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  font-size: 16px;
+}
+
+.label {
+  position: relative;
+  letter-spacing: -0.23px;
+  line-height: 20px;
+}
+
+.button {
+  border-radius: 40px;
+  background-color: #007aff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  text-align: left;
+  font-size: 15px;
+  color: #fff;
+  font-family: 'SF Pro';
+}
+
+.offRecordParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0px;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 20px;
+  color: #9ca3af;
+  font-family: Inter;
+}
