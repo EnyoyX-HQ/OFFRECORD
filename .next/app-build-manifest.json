@@ -18,10 +18,10 @@
       "static/css/app/users/category/[slug]/page.css",
       "static/chunks/app/users/category/[slug]/page.js"
     ],
-    "/users/content/[slug]/page": [
+    "/not-found": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/users/content/[slug]/page.js"
+      "static/chunks/app/not-found.js"
     ]
   }
 }
