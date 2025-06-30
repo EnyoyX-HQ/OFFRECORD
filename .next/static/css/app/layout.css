@@ -175,6 +175,8 @@
     /* Prevent flash of unstyled content */
     visibility: visible;
     opacity: 1;
+    /* Ensure body doesn't interfere with fixed positioning */
+    position: relative;
   }
   
   /* Prevent layout shifts for images */
