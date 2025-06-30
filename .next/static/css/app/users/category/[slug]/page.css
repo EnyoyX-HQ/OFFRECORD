@@ -1,67 +1,10 @@
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/cards/CardContent.module.css ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/layout/WebSideBar.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
-
-.CardContent_settingUpYour__x53__ {
-  align-self: stretch;
-  position: relative;
-  line-height: 32px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.CardContent_settingUpYourNextJsProjecWrapper__iEbTi {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 28px;
-}
-
-.CardContent_frameWrapper__uIxie {
-  flex: 1 1;
-  border-radius: 12px;
-  background-color: #070708;
-  height: 350px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.CardContent_frameWrapper__uIxie:hover {
-  transform: translateY(-2px);
-  background-color: #0a0a0b;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .CardContent_frameWrapper__uIxie {
-    height: 280px;
-  }
-  
-  .CardContent_settingUpYourNextJsProjecWrapper__iEbTi {
-    padding: 20px;
-  }
-  
-  .CardContent_settingUpYour__x53__ {
-    font-size: 18px;
-    line-height: 28px;
-  }
-}
-/*!**********************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/layout/WebSideBar/WebSideBar.module.css ***!
-  \**********************************************************************************************************************************************************************************************************************************************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
 
-.WebSideBar_design__DU4JE {
+.WebSideBar_design__MaHt2 {
   align-self: stretch;
   position: relative;
   line-height: 20px;
@@ -71,11 +14,11 @@
   transition: color 0.2s ease;
 }
 
-.WebSideBar_design__DU4JE:hover {
+.WebSideBar_design__MaHt2:hover {
   color: #fff;
 }
 
-.WebSideBar_engineering__VzpI7 {
+.WebSideBar_engineering__ObW1L {
   align-self: stretch;
   position: relative;
   line-height: 20px;
@@ -84,7 +27,7 @@
   cursor: pointer;
 }
 
-.WebSideBar_designParent__aUi_q {
+.WebSideBar_designParent__KW6A2 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -93,7 +36,7 @@
   gap: 8px;
 }
 
-.WebSideBar_avatarIcon__HxMQt {
+.WebSideBar_avatarIcon__lxm3N {
   width: 32px;
   position: relative;
   border-radius: 9999px;
@@ -101,7 +44,7 @@
   object-fit: cover;
 }
 
-.WebSideBar_avatarIcon1__kjymU {
+.WebSideBar_avatarIcon1__UMP4U {
   width: 32px;
   position: relative;
   border-radius: 9999px;
@@ -110,30 +53,29 @@
   margin-left: -12px;
 }
 
-.WebSideBar_avatarGroup___qsW3 {
+.WebSideBar_avatarGroup__bel4j {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
 
-.WebSideBar_joinACommunity__HLviJ {
+.WebSideBar_joinACommunity__5EpqN {
   align-self: stretch;
   position: relative;
-  line-height: 20px;
-  font-size: 14px;
+  line-height: 24px;
   text-transform: lowercase;
   color: #9ca3af;
 }
 
-.WebSideBar_label__koteq {
+.WebSideBar_label__qAbCp {
   position: relative;
   letter-spacing: -0.23px;
   line-height: 20px;
   color: #fff;
 }
 
-.WebSideBar_button__jrTuS {
+.WebSideBar_button__M4KCv {
   border-radius: 40px;
   background-color: #007aff;
   display: flex;
@@ -147,11 +89,11 @@
   transition: background-color 0.2s ease;
 }
 
-.WebSideBar_button__jrTuS:hover {
+.WebSideBar_button__M4KCv:hover {
   background-color: #0056cc;
 }
 
-.WebSideBar_container__iiHwb {
+.WebSideBar_container__80bgX {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -160,19 +102,20 @@
   gap: 20px;
   font-size: 16px;
   color: #fff;
+  margin-top: 60px; /* Add spacing between category list and become member section */
 }
 
-.WebSideBar_websidebar__Ib9iN {
-  width: 270px;
-  position: fixed;
-  top: 80px; /* Account for header height */
-  left: 0;
-  height: calc(100vh - 80px); /* Subtract header height */
+.WebSideBar_websidebar__AuZGM {
+  width: 420px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 40px 40px 100px 40px;
+  padding: 80px 56px 100px 0px;
   box-sizing: border-box;
   text-align: left;
   font-size: 14px;
@@ -180,31 +123,12 @@
   font-family: Inter;
   border-right: 0.5px solid #303030;
   background-color: #000;
-  z-index: 40;
-  overflow-y: auto;
-}
-
-.WebSideBar_sidebarContent__XClXh {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex: 1 1;
-  width: 100%;
-}
-
-.WebSideBar_categoriesSection__CrYEU {
-  width: 100%;
-}
-
-.WebSideBar_becomeMemberSection__xreaO {
-  width: 100%;
-  margin-top: auto;
+  z-index: 10;
 }
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .WebSideBar_websidebar__Ib9iN {
+  .WebSideBar_websidebar__AuZGM {
     width: 100%;
     position: relative;
     height: auto;
@@ -213,49 +137,42 @@
     border-bottom: 0.5px solid #303030;
     gap: 32px;
     justify-content: flex-start;
-    overflow-y: visible;
   }
   
-  .WebSideBar_sidebarContent__XClXh {
-    flex-direction: column;
-    gap: 32px;
-  }
-  
-  .WebSideBar_becomeMemberSection__xreaO {
-    margin-top: 0;
-    padding-top: 0;
-  }
-  
-  .WebSideBar_designParent__aUi_q {
+  .WebSideBar_designParent__KW6A2 {
     flex-direction: row;
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
   }
+  
+  .WebSideBar_container__80bgX {
+    margin-top: 32px;
+  }
 }
 
 @media (max-width: 768px) {
-  .WebSideBar_websidebar__Ib9iN {
+  .WebSideBar_websidebar__AuZGM {
     padding: 16px 0;
     gap: 24px;
   }
   
-  .WebSideBar_sidebarContent__XClXh {
-    gap: 24px;
-  }
-  
-  .WebSideBar_designParent__aUi_q {
+  .WebSideBar_designParent__KW6A2 {
     gap: 16px;
   }
+  
+  .WebSideBar_container__80bgX {
+    margin-top: 24px;
+  }
 }
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/CategoryList/CategoryList.module.css ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/CategoryList.module.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
 
-.CategoryList_frameGroup__BidHn {
-  width: 270px;
+.CategoryList_frameGroup__JAZ8M {
+  width: 420px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -265,7 +182,7 @@
   position: relative;
 }
 
-.CategoryList_bestPracticesFor__zpTn7 {
+.CategoryList_bestPracticesFor__Xnxh6 {
   width: 757px;
   position: relative;
   text-transform: lowercase;
@@ -277,7 +194,7 @@
   line-height: 1.2;
 }
 
-.CategoryList_aCuratedCollection__5U27B {
+.CategoryList_aCuratedCollection__VNP5K {
   width: 680px;
   position: relative;
   font-size: 16px;
@@ -287,7 +204,7 @@
   display: inline-block;
 }
 
-.CategoryList_bestPracticesForNonTechnicParent__pyWaQ {
+.CategoryList_bestPracticesForNonTechnicParent__fFo35 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -295,7 +212,7 @@
   gap: 8px;
 }
 
-.CategoryList_curatedForYou__uSr8b {
+.CategoryList_curatedForYou__t0o1C {
   width: 597px;
   position: relative;
   text-transform: lowercase;
@@ -306,7 +223,7 @@
   display: inline-block;
 }
 
-.CategoryList_curatedForYouWrapper__HchEz {
+.CategoryList_curatedForYouWrapper__myUHJ {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -315,7 +232,43 @@
   font-size: 20px;
 }
 
-.CategoryList_frameDiv__oL_nT {
+.CategoryList_settingUpYour__JPEXS {
+  align-self: stretch;
+  position: relative;
+  line-height: 32px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.CategoryList_settingUpYourNextJsProjecWrapper__TBsyg {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 28px;
+}
+
+.CategoryList_frameWrapper__uXMfq {
+  flex: 1 1;
+  border-radius: 12px;
+  background-color: #070708;
+  height: 350px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.CategoryList_frameWrapper__uXMfq:hover {
+  transform: translateY(-2px);
+  background-color: #0a0a0b;
+}
+
+.CategoryList_frameDiv__t8ugx {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -324,7 +277,7 @@
   gap: 8px;
 }
 
-.CategoryList_frameContainer__oasVz {
+.CategoryList_frameContainer___Olbe {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -333,7 +286,7 @@
   gap: 32px;
 }
 
-.CategoryList_containerInner__sECVs {
+.CategoryList_containerInner__2Hdqm {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -342,13 +295,13 @@
   font-size: 18px;
 }
 
-.CategoryList_lastUpdatedOn__3MSaU {
+.CategoryList_lastUpdatedOn__oKh_Y {
   position: relative;
   line-height: 20px;
   color: #9ca3af;
 }
 
-.CategoryList_lastUpdatedOnDec42024Wrapper__yy1uB {
+.CategoryList_lastUpdatedOnDec42024Wrapper__YBQAo {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -357,18 +310,18 @@
   font-size: 14px;
 }
 
-.CategoryList_container1__MRHPq {
+.CategoryList_container1__qZbMQ {
   flex: 1 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 160px 0px 100px 64px; /* Add top padding for header */
+  padding: 80px 0px 100px 64px;
   gap: 40px;
   font-size: 48px;
 }
 
-.CategoryList_frameParent__GXOn8 {
+.CategoryList_frameParent__u3XXf {
   align-self: stretch;
   display: flex;
   flex-direction: row;
@@ -380,22 +333,7 @@
   margin: 0 auto;
 }
 
-/* Responsive margins for larger screens */
-@media (min-width: 2500px) {
-  .CategoryList_frameParent__GXOn8 {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-
-@media (min-width: 3000px) {
-  .CategoryList_frameParent__GXOn8 {
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
-
-.CategoryList_categorylist__rIkyE {
+.CategoryList_categorylist__YhuQc {
   width: 100%;
   position: relative;
   background-color: #000;
@@ -413,49 +351,41 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .CategoryList_container1__MRHPq {
-    padding-top: 120px; /* Adjust for mobile header */
-  }
-  
-  .CategoryList_frameParent__GXOn8 {
+  .CategoryList_frameParent__u3XXf {
     flex-direction: column;
     padding: 0px 32px;
     gap: 32px;
   }
   
-  .CategoryList_frameGroup__BidHn {
+  .CategoryList_frameGroup__JAZ8M {
     width: 100%;
     position: relative;
   }
   
-  .CategoryList_bestPracticesFor__zpTn7 {
+  .CategoryList_bestPracticesFor__Xnxh6 {
     width: 100%;
     font-size: 36px;
   }
   
-  .CategoryList_aCuratedCollection__5U27B {
+  .CategoryList_aCuratedCollection__VNP5K {
     width: 100%;
   }
   
-  .CategoryList_curatedForYou__uSr8b {
+  .CategoryList_curatedForYou__t0o1C {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .CategoryList_container1__MRHPq {
-    padding-top: 100px; /* Maintain header spacing on mobile */
-  }
-  
-  .CategoryList_frameParent__GXOn8 {
+  .CategoryList_frameParent__u3XXf {
     padding: 0px 20px;
   }
   
-  .CategoryList_bestPracticesFor__zpTn7 {
+  .CategoryList_bestPracticesFor__Xnxh6 {
     font-size: 28px;
   }
   
-  .CategoryList_frameDiv__oL_nT {
+  .CategoryList_frameDiv__t8ugx {
     flex-direction: column;
     gap: 8px;
   }

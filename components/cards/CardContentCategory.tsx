@@ -2,7 +2,6 @@
 
 import { FunctionComponent } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './CardContentCategory.module.css';
 
 interface CardContentCategoryProps {
   title: string;
@@ -31,10 +30,17 @@ const CardContentCategory: FunctionComponent<CardContentCategoryProps> = ({ titl
   };
 
   return (
-    <div className={styles.frameWrapper} onClick={handleClick}>
-      <div className={styles.bestPracticesParent}>
-        <div className={styles.bestPractices}>{title}</div>
-        <div className={styles.ollioIsNot}>{description}</div>
+    <div 
+      className="group cursor-pointer bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-all duration-200 hover:border-gray-300 hover:-translate-y-1"
+      onClick={handleClick}
+    >
+      <div className="space-y-3">
+        <div className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
+          {title}
+        </div>
+        <div className="text-gray-600 text-sm leading-relaxed">
+          {description}
+        </div>
       </div>
     </div>
   );

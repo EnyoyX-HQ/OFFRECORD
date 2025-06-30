@@ -2,7 +2,6 @@
 
 import { FunctionComponent } from 'react';
 import { useRouter } from 'next/navigation';
-import styles from './CardContent.module.css';
 
 interface CardContentProps {
   title: string;
@@ -22,9 +21,14 @@ const CardContent: FunctionComponent<CardContentProps> = ({ title }) => {
   };
 
   return (
-    <div className={styles.frameWrapper} onClick={handleClick}>
-      <div className={styles.settingUpYourNextJsProjecWrapper}>
-        <div className={styles.settingUpYour}>{title}</div>
+    <div 
+      className="group cursor-pointer bg-white rounded-xl border border-gray-200 p-6 shadow-sm hover:shadow-md transition-all duration-200 hover:border-gray-300 hover:-translate-y-1"
+      onClick={handleClick}
+    >
+      <div className="flex items-center justify-between">
+        <div className="text-lg font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
+          {title}
+        </div>
       </div>
     </div>
   );
