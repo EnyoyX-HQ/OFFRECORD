@@ -30,6 +30,17 @@
   width: 100%;
 }
 
+.Home_container1__fo_d4 {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px 0px 40px 64px;
+  gap: 80px;
+  margin-left: 420px; /* Account for fixed sidebar width */
+}
+
 /* Responsive margins for larger screens */
 @media (min-width: 2500px) {
   .Home_frameParent__I08Fc {
@@ -233,8 +244,11 @@
   color: #9ca3af;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
+  .Home_container1__fo_d4 {
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
+  
   .Home_frameParent__I08Fc {
     flex-direction: column;
   }
@@ -263,6 +277,11 @@
 }
 
 @media (max-width: 768px) {
+  .Home_container1__fo_d4 {
+    padding: 20px;
+    gap: 32px;
+  }
+  
   .Home_discoverNoBsInsightsContainer__NFRIY {
     font-size: 32px;
     line-height: 40px;
@@ -280,7 +299,7 @@
   .Home_frameGroup__K3z3a {
     gap: 24px;
   }
-}
+  }
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[7].use[3]!./components/cards/CardContent.module.css ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
