@@ -2,7 +2,7 @@
 
 import { FunctionComponent } from 'react';
 import { useParams } from 'next/navigation';
-import CategoryList from '../../../../components/CategoryList/CategoryList';
+import CategoryList from '@/components/CategoryList';
 
 const CategoryPage: FunctionComponent = () => {
   const params = useParams();

@@ -1,9 +1,9 @@
 import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import Header from '@/components/layout/Header/Header';
-import Footer from '@/components/layout/Footer/Footer';
-import WebSideBar from '@/components/layout/WebSideBar/WebSideBar';
+import Header from '@/components/layout/Header';
+import Footer from '@/components/layout/Footer';
+import WebSideBar from '@/components/layout/WebSideBar';
 import SkeletonLoader from '@/components/ui/SkeletonLoader';
 import { Toaster } from '@/components/ui/sonner';
 
