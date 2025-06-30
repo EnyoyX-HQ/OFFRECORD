@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
+
+.frameGroup {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.bestPracticesFor {
+  width: 757px;
+  position: relative;
+  text-transform: lowercase;
+  font-weight: 800;
+  background: linear-gradient(128.64deg, #7a96ac, #eaeff3 18%, #c2d4e1 31.5%, #fff 49.19%, #d4dee5 61.5%, #abbdc8 78.5%, #bccad7 95.5%), radial-gradient(50% 50% at 50% 50%, #ff9fea, rgba(255, 255, 255, 0)), radial-gradient(50% 50% at 50% 50%, #a349ef 42.19%, #ff65e6), #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.aCuratedCollection {
+  width: 680px;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: lowercase;
+  color: #9ca3af;
+  display: inline-block;
+}
+
+.bestPracticesForNonTechnicParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.curatedForYou {
+  width: 597px;
+  position: relative;
+  text-transform: lowercase;
+  font-weight: 500;
+  background: linear-gradient(128.64deg, #7a96ac, #eaeff3 18%, #c2d4e1 31.5%, #fff 49.19%, #d4dee5 61.5%, #abbdc8 78.5%, #bccad7 95.5%), radial-gradient(50% 50% at 50% 50%, #ff9fea, rgba(255, 255, 255, 0)), radial-gradient(50% 50% at 50% 50%, #a349ef 42.19%, #ff65e6), #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.curatedForYouWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+.frameDiv {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.frameContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 32px;
+}
+
+.containerInner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+.lastUpdatedOn {
+  position: relative;
+  line-height: 20px;
+  color: #9ca3af;
+}
+
+.lastUpdatedOnDec42024Wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+
+.container1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 160px 0px 100px 64px; /* Add top padding for header */
+  gap: 40px;
+  font-size: 48px;
+}
+
+.frameParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0px 64px 0px 0px;
+  gap: 0px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Responsive margins for larger screens */
+@media (min-width: 2500px) {
+  .frameParent {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 3000px) {
+  .frameParent {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.categorylist {
+  width: 100%;
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 14px;
+  color: #9ca3af;
+  font-family: Inter;
+  min-height: 100vh;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container1 {
+    padding-top: 120px; /* Adjust for mobile header */
+  }
+  
+  .frameParent {
+    flex-direction: column;
+    padding: 0px 32px;
+    gap: 32px;
+  }
+  
+  .frameGroup {
+    width: 100%;
+    position: relative;
+  }
+  
+  .bestPracticesFor {
+    width: 100%;
+    font-size: 36px;
+  }
+  
+  .aCuratedCollection {
+    width: 100%;
+  }
+  
+  .curatedForYou {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    padding-top: 100px; /* Maintain header spacing on mobile */
+  }
+  
+  .frameParent {
+    padding: 0px 20px;
+  }
+  
+  .bestPracticesFor {
+    font-size: 28px;
+  }
+  
+  .frameDiv {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,4 +1,4 @@
-import CategoryList from '@/components/CategoryList';
+import CategoryList from '../../../components/CategoryList/CategoryList';
 
 export default function BuildWithPage() {
   return (

@@ -2,8 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Header from '@/components/layout/Header';
-import Footer from '@/components/layout/Footer';
-import WebSideBar from '@/components/layout/WebSideBar';
+import Footer from '@/components/layout/Footer/Footer';
 import SkeletonLoader from '@/components/ui/SkeletonLoader';
 import { Toaster } from '@/components/ui/sonner';
 
@@ -23,21 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SkeletonLoader>
-          <main className="min-h-screen bg-black text-white">
-            <Header />
-            
-            <div className="content flex">
-              <div className="SideBarContainer">
-                <WebSideBar showCategories={true} showBecomeMember={true} />
-              </div>
-              
-              <div className="body flex-1">
-                {children}
-              </div>
-            </div>
-            
-            <Footer />
-          </main>
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
         </SkeletonLoader>
         <Toaster />
       </body>
