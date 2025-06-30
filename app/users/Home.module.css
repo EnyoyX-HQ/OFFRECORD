@@ -35,7 +35,7 @@
   justify-content: flex-start;
   padding: 40px 0px 40px 64px;
   gap: 80px;
-  margin-left: 350px; /* Account for fixed sidebar width */
+  margin-left: 270px; /* Account for fixed sidebar width */
 }
 
 /* Responsive margins for larger screens */

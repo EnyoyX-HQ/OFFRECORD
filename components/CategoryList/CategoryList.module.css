@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=SF+Pro:wght@400&display=swap');
 
 .frameGroup {
-  width: 350px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;

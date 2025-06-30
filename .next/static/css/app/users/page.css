@@ -38,7 +38,7 @@
   justify-content: flex-start;
   padding: 40px 0px 40px 64px;
   gap: 80px;
-  margin-left: 350px; /* Account for fixed sidebar width */
+  margin-left: 270px; /* Account for fixed sidebar width */
 }
 
 /* Responsive margins for larger screens */
@@ -537,7 +537,7 @@
 }
 
 .WebSideBar_websidebar__Ib9iN {
-  width: 350px;
+  width: 270px;
   position: fixed;
   top: 0;
   left: 0;
@@ -546,7 +546,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 80px 56px 100px 40px;
+  padding: 80px 40px 100px 40px;
   box-sizing: border-box;
   text-align: left;
   font-size: 14px;
