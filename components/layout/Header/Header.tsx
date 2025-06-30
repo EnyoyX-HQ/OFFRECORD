@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-[#303030] backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black backdrop-blur-md" style={{ borderBottom: '0.5px solid #303030' }}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
