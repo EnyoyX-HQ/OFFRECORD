@@ -99,12 +99,11 @@
   gap: 20px;
   font-size: 16px;
   color: #fff;
-  margin-top: 60px; /* Add spacing between category list and become member section */
 }
 
 .websidebar {
   width: 420px;
-  position: fixed;
+  position: sticky;
   top: 0;
   height: 100vh;
   display: flex;

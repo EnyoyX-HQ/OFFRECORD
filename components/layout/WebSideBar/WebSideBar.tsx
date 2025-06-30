@@ -18,7 +18,7 @@ const WebSideBar: FunctionComponent<WebSideBarProps> = ({
 
   const categories = [
     { id: 'design', label: 'design', path: '/users/category/design' },
-    { id: 'engineering', label: 'Engineering', path: '/users/category/engineering' },
+    { id: 'engineering', label: 'engineering', path: '/users/category/engineering' },
     { id: 'goto-market', label: 'goto market', path: '/users/category/goto-market' },
     { id: 'compliance', label: 'compliance', path: '/users/category/compliance' }
   ];
@@ -65,7 +65,7 @@ const WebSideBar: FunctionComponent<WebSideBarProps> = ({
                     <img className={styles.avatarIcon1} alt="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=32&h=32&fit=crop&crop=face" />
                   </div>
                 </div>
-                <div className={styles.joinACommunity}>Join a community of locked-in founders shipping their ideas with ai</div>
+                <div className={styles.joinACommunity}>join a community of locked-in founders shipping their ideas with ai</div>
               </div>
               <div className={styles.button}>
                 <div className={styles.label}>become a member</div>

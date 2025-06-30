@@ -12,127 +12,6 @@
   position: relative;
 }
 
-.sidebar {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 80px 56px 100px 0px;
-  box-sizing: border-box;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-  border-right: 0.5px solid #303030;
-  background-color: #000;
-}
-
-.categoriesSection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.becomeMemberSection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 20px;
-  font-size: 16px;
-  color: #fff;
-}
-
-.design {
-  align-self: stretch;
-  position: relative;
-  line-height: 20px;
-  text-transform: lowercase;
-  color: #9ca3af;
-  cursor: pointer;
-  transition: color 0.2s ease;
-}
-
-.design:hover {
-  color: #fff;
-}
-
-.engineering {
-  align-self: stretch;
-  position: relative;
-  line-height: 20px;
-  text-transform: lowercase;
-  color: #fff;
-  cursor: pointer;
-}
-
-.designParent {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 8px;
-}
-
-.avatarIcon {
-  width: 32px;
-  position: relative;
-  border-radius: 9999px;
-  height: 32px;
-  object-fit: cover;
-}
-
-.avatarIcon1 {
-  width: 32px;
-  position: relative;
-  border-radius: 9999px;
-  height: 32px;
-  object-fit: cover;
-  margin-left: -12px;
-}
-
-.avatarGroup {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.joinACommunity {
-  align-self: stretch;
-  position: relative;
-  line-height: 24px;
-  text-transform: lowercase;
-  color: #9ca3af;
-}
-
-.label {
-  position: relative;
-  letter-spacing: -0.23px;
-  line-height: 20px;
-  color: #fff;
-}
-
-.button {
-  border-radius: 40px;
-  background-color: #007aff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 10px;
-  font-size: 15px;
-  font-family: 'SF Pro';
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.button:hover {
-  background-color: #0056cc;
-}
-
 .bestPracticesFor {
   width: 757px;
   position: relative;
@@ -181,42 +60,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   font-size: 20px;
-}
-
-.settingUpYour {
-  align-self: stretch;
-  position: relative;
-  line-height: 32px;
-  font-weight: 500;
-  color: #fff;
-}
-
-.settingUpYourNextJsProjecWrapper {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 28px;
-}
-
-.frameWrapper {
-  flex: 1;
-  border-radius: 12px;
-  background-color: #070708;
-  height: 350px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-.frameWrapper:hover {
-  transform: translateY(-2px);
-  background-color: #0a0a0b;
 }
 
 .frameDiv {
@@ -313,24 +156,6 @@
     position: relative;
   }
   
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 20px 0;
-    border-right: none;
-    border-bottom: 0.5px solid #303030;
-    gap: 32px;
-    justify-content: flex-start;
-  }
-  
-  .designParent {
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
   .bestPracticesFor {
     width: 100%;
     font-size: 36px;
@@ -348,15 +173,6 @@
 @media (max-width: 768px) {
   .frameParent {
     padding: 0px 20px;
-  }
-  
-  .sidebar {
-    padding: 16px 0;
-    gap: 24px;
-  }
-  
-  .designParent {
-    gap: 16px;
   }
   
   .bestPracticesFor {
