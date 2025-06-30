@@ -36,7 +36,7 @@ const WebSideBar: FunctionComponent<WebSideBarProps> = ({
   };
 
   return (
-    <div className="w-80 fixed top-20 left-0 h-[calc(100vh-80px)] flex flex-col justify-between p-10 border-r border-zinc-700 bg-black z-40 overflow-y-auto">
+    <div className="fixed top-20 left-0 w-80 h-[calc(100vh-80px)] flex flex-col justify-between p-10 border-r border-zinc-700 bg-black z-40 overflow-y-auto">
       <div className="flex flex-col flex-1 w-full">
         {showCategories && (
           <div className="w-full">

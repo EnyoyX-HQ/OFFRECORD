@@ -46,18 +46,15 @@
     line-height: normal;
   }
   
-  /* Prevent layout shifts for images */
   img {
     max-width: 100%;
     height: auto;
   }
   
-  /* Smooth scrolling */
   html {
     scroll-behavior: smooth;
   }
   
-  /* Reduce motion for users who prefer it */
   @media (prefers-reduced-motion: reduce) {
     *,
     *::before,
@@ -69,7 +66,6 @@
     }
   }
   
-  /* Custom skeleton animation */
   @keyframes skeleton-pulse {
     0%, 100% {
       opacity: 1;
@@ -82,21 +78,29 @@
   .animate-pulse {
     animation: skeleton-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   }
+}
 
-  /* Layout Components */
-  .sidebar-container {
-    @apply w-80 flex-shrink-0;
+/* Layout Structure */
+.content {
+  @apply pt-20; /* Account for fixed header */
+}
+
+.SideBarContainer {
+  @apply w-80 flex-shrink-0;
+}
+
+.body {
+  @apply flex-1 min-h-screen;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    @apply flex-col;
   }
   
-  .content-body {
-    @apply flex-1 overflow-x-hidden;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 1024px) {
-    .sidebar-container {
-      @apply hidden;
-    }
+  .SideBarContainer {
+    @apply w-full;
   }
 }
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\

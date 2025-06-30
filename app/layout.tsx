@@ -23,26 +23,21 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <SkeletonLoader>
-          <div className="min-h-screen bg-black text-white">
-            {/* Fixed Header */}
+          <main className="min-h-screen bg-black text-white">
             <Header />
             
-            {/* Main Content Container */}
-            <div className="flex pt-20"> {/* pt-20 accounts for fixed header height */}
-              {/* Fixed Sidebar Container */}
-              <div className="sidebar-container">
+            <div className="content flex">
+              <div className="SideBarContainer">
                 <WebSideBar showCategories={true} showBecomeMember={true} />
               </div>
               
-              {/* Main Content Body */}
-              <div className="content-body flex-1 min-h-screen">
+              <div className="body flex-1">
                 {children}
               </div>
             </div>
             
-            {/* Footer */}
             <Footer />
-          </div>
+          </main>
         </SkeletonLoader>
         <Toaster />
       </body>
