@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-zinc-800/30 backdrop-blur-md">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-[#303030] backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -82,7 +82,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         <div className={`lg:hidden transition-all duration-300 ease-in-out ${
           isMobileMenuOpen 
-            ? 'max-h-96 opacity-100 border-t border-zinc-800/30' 
+            ? 'max-h-96 opacity-100 border-t border-[#303030]' 
             : 'max-h-0 opacity-0 overflow-hidden'
         }`}>
           <div className="py-6 space-y-4">
