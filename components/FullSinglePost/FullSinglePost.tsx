@@ -3,7 +3,7 @@
 import { FunctionComponent, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import styles from './FullSinglePost.module.css';
-import WebSideBar from '@/components/layout/WebSideBar/WebSideBar';
+import WebSideBar from '../layout/WebSideBar/WebSideBar';
 
 interface FullSinglePostProps {
   title?: string;

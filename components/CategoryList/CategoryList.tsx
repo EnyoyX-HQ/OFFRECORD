@@ -2,8 +2,8 @@
 
 import { FunctionComponent } from 'react';
 import styles from './CategoryList.module.css';
-import CardContent from '@/components/cards/CardContent';
-import WebSideBar from '@/components/layout/WebSideBar/WebSideBar';
+import CardContent from '../cards/CardContent';
+import WebSideBar from '../layout/WebSideBar/WebSideBar';
 
 interface CategoryListProps {
   category?: string;
