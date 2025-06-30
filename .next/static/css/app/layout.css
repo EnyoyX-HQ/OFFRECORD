@@ -172,11 +172,7 @@
     @apply bg-background text-foreground;
     margin: 0;
     line-height: normal;
-    /* Prevent flash of unstyled content */
-    visibility: visible;
-    opacity: 1;
-    /* Ensure body doesn't interfere with fixed positioning */
-    position: relative;
+    padding-top: 80px; /* Add padding to account for fixed header */
   }
   
   /* Prevent layout shifts for images */
