@@ -8,7 +8,7 @@ const Home: FunctionComponent = () => {
   return (
     <div className={styles.home}>
       <div className={styles.frameParent}>
-        <WebSideBar showCategories={false} showBecomeMember={true} />
+        <WebSideBar showCategories={true} showBecomeMember={true} />
         <div className={styles.container1}>
           <div className={styles.frameGroup}>
             <div className={styles.discoverNoBsInsightsToShiParent}>
