@@ -36,7 +36,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 40px 0px 40px 64px;
+  padding: 120px 0px 40px 64px; /* Add top padding for header */
   gap: 80px;
   margin-left: 270px; /* Account for fixed sidebar width */
 }
@@ -247,6 +247,7 @@
 @media (max-width: 1024px) {
   .Home_container1__fo_d4 {
     margin-left: 0; /* Remove margin on smaller screens */
+    padding-top: 100px; /* Adjust for smaller header on mobile */
   }
   
   .Home_frameParent__I08Fc {
@@ -278,7 +279,7 @@
 
 @media (max-width: 768px) {
   .Home_container1__fo_d4 {
-    padding: 20px;
+    padding: 100px 20px 20px 20px; /* Maintain header spacing */
     gap: 32px;
   }
   
@@ -539,14 +540,14 @@
 .WebSideBar_websidebar__Ib9iN {
   width: 270px;
   position: fixed;
-  top: 0;
+  top: 80px; /* Account for header height */
   left: 0;
-  height: 100vh;
+  height: calc(100vh - 80px); /* Subtract header height */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 80px 40px 100px 40px;
+  padding: 40px 40px 100px 40px;
   box-sizing: border-box;
   text-align: left;
   font-size: 14px;
@@ -554,7 +555,7 @@
   font-family: Inter;
   border-right: 0.5px solid #303030;
   background-color: #000;
-  z-index: 50;
+  z-index: 40;
   overflow-y: auto;
 }
 

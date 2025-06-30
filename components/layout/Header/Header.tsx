@@ -12,7 +12,7 @@ export default function Header() {
   }
   
   return (
-    <nav className="sticky top-0 z-50 w-full border-b border-zinc-800 bg-black">
+    <nav className="fixed top-0 z-[60] w-full border-b border-zinc-800 bg-black">
       <div className="w-full max-w-[1512px] mx-auto px-10 py-5 flex items-center justify-between">
         <Link href="/users" className="flex items-center space-x-2">
           <span className="text-gray-400 text-xl font-extrabold font-['Inter'] uppercase">OFF-RECORD</span>

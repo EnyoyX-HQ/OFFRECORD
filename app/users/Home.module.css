@@ -33,7 +33,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 40px 0px 40px 64px;
+  padding: 120px 0px 40px 64px; /* Add top padding for header */
   gap: 80px;
   margin-left: 270px; /* Account for fixed sidebar width */
 }
@@ -244,6 +244,7 @@
 @media (max-width: 1024px) {
   .container1 {
     margin-left: 0; /* Remove margin on smaller screens */
+    padding-top: 100px; /* Adjust for smaller header on mobile */
   }
   
   .frameParent {
@@ -275,7 +276,7 @@
 
 @media (max-width: 768px) {
   .container1 {
-    padding: 20px;
+    padding: 100px 20px 20px 20px; /* Maintain header spacing */
     gap: 32px;
   }
   

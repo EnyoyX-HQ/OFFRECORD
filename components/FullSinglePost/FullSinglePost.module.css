@@ -311,7 +311,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 80px 40px 100px 64px;
+  padding: 160px 40px 100px 64px; /* Add top padding for header */
   box-sizing: border-box;
   gap: 64px;
   font-size: 18px;
@@ -392,6 +392,10 @@
 
 /* Responsive Design */
 @media (max-width: 1024px) {
+  .container1 {
+    padding-top: 120px; /* Adjust for mobile header */
+  }
+  
   .frameParent {
     flex-direction: column;
     padding: 0px 32px;
@@ -419,6 +423,10 @@
 }
 
 @media (max-width: 768px) {
+  .container1 {
+    padding-top: 100px; /* Maintain header spacing on mobile */
+  }
+  
   .frameParent {
     padding: 0px 20px;
   }
